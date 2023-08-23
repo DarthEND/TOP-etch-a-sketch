@@ -49,6 +49,13 @@ newSize.oninput = function tableSize(){
 }
 
 function clearTable(){
+  const tableArr = Array.from(gridTemplate.childNodes);
+  tableArr.forEach((element) => {
+    gridTemplate.removeChild(element);
+  });
+}
+
+function eraseTable(){
   const gridElement = document.querySelectorAll('.grid-element');
   for(let i = 0; i < gridElement.length; i++){
     gridElement[i].style.backgroundColor = '';
