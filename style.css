@@ -1,0 +1,135 @@
+*,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(240,240,240);
+  color: #222222;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  font-size: 18px;
+}
+
+main{
+  max-width: 800px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e74c3c;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main h1{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+#colorful{
+  margin-left:10px;
+}
+
+#btn{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.grid-template{
+  display: grid; /* Grid */
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center{
+  justify-content: center;
+}
+
+.eraserBtn button{
+  border-radius: 7px;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+}
+
+.left-knob, .right-knob{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 100%;
+}
+
+.left, .right, .center{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.left p, .right p, .center p{
+  margin-bottom: 10px;
+}
+
+.left-knob, .right-knob{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pickColor{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  height: 80%;
+}
+#pickColor::-webkit-color-swatch{
+  border-radius: 100%;
+}
+
+#colorful{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 4px solid transparent;
+  background: linear-gradient(white, white) padding-box, 
+    linear-gradient(112deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+#colorful:checked{
+  background-color: #4158D0;
+  background-image: linear-gradient(112deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+}
+.grid-element{
+  border: 1px solid #ccc;
+  background-color: #fff;
+}

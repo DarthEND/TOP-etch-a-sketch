@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Etch-a-Sketch</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Etch-a-Sketch</h1>
+    </header>
+    <div class="grid-template">
+      
+    </div>
+    <footer>
+      <div class="left">
+        <p>Pick Color</p>
+        <div class="left-knob">
+          <input type="color" name="color" id="pickColor">
+        </div>
+      </div>
+      <div class="center">
+        <div class="sizeSlider">
+          <p>Table Size: <span></span></p>
+          <input type="range" id="slider" min="2" max="64">
+        </div>
+        <div class="eraserBtn">
+          <button onclick="clearTable()">Erase</button>
+        </div>
+      </div>
+      <div class="right">
+        <p>Random Color</p>
+        <div class="right-knob">
+          <input type="checkbox" name="color" id="colorful">
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
